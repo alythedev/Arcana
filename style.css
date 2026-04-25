@@ -86,12 +86,12 @@ body {
 .hc-flag {
     z-index: 9999;
     position: absolute;
-    top: -7px;
+    top: 50px;
     right: 50px
 }
   
 .hc-flag img {
-    height: 200px;
+    width: 200px;
     transition: transform 0.2s ease;
 }
 

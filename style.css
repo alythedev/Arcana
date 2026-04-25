@@ -476,13 +476,15 @@ h2{
     }
 
     .hero {
-        aspect-ratio: 4 / 3.5;
+        aspect-ratio: 4 / 3.65;
         background-position: center;
     }
 
     .hero .two-liner{
-        width: 95%;
+        width: 100%;
     }
+
+    
 
     .hc-flag{
         top: 20px;
@@ -491,7 +493,9 @@ h2{
     .hc-flag img{
         width: 80px;
     }
-    
+    .hero .bottom{
+        width: 140%;
+    }
 }
 
 

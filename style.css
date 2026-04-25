@@ -73,7 +73,7 @@ body {
 .hero {
     position: relative;
 
-    background-image: url("Assets/hero.PNG");
+    background-image: url("Assets/hero.webp");
     background-size: cover;
     background-position: center;
 
@@ -206,7 +206,7 @@ h2{
 }
 
 .section2 {
-    background-image: url("Assets/squiggle.png");
+    background-image: url("Assets/squiggle.wbp");
     background-repeat: repeat-x;
     background-size: 35vh; 
 
@@ -247,7 +247,7 @@ h2{
 }
 
 .section3 {
-    background-image: url("Assets/squiggle.png");
+    background-image: url("Assets/squiggle.wbp");
     background-repeat: repeat-x;
     background-size: 35vh; 
 
@@ -339,7 +339,7 @@ h2{
 }
 
 .section4 {
-    background-image: url("Assets/squiggle.png");
+    background-image: url("Assets/squiggle.webp");
     background-repeat: repeat-x;
     background-size: 35vh; 
 

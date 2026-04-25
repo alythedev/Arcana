@@ -1,0 +1,421 @@
+@font-face {
+    font-family: "Cooper";
+    src: url("Assets/Fonts/Cooper_BT_Font_Family/CooperLtBT-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cooper";
+    src: url("Assets/Fonts/Cooper_BT_Font_Family/CooperMdBT-Regular.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cooper";
+    src: url("Assets/Fonts/Cooper_BT_Font_Family/CooperLtBT-Bold.ttf") format("truetype");
+    font-weight: 900;
+    font-style: bold;
+}
+
+
+@font-face {
+    font-family: "Cooper";
+    src: url("Assets/Fonts/Cooper_BT_Font_Family/CooperLtBT-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Phantom Sans';
+  src:
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Phantom Sans';
+  src:
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Phantom Sans';
+  src:
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+      format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+    font-family: "Phantom Sans";
+    margin:0;
+}
+
+.hero {
+    position: relative;
+
+    background-image: url("Assets/hero.PNG");
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+}
+
+.hc-flag {
+    z-index: 9999;
+    position: absolute;
+    top: -7px;
+    right: 50px
+}
+  
+.hc-flag img {
+    height: 200px;
+}
+
+.hc-flag:hover img {
+    animation: wave-flag 0.5s linear infinite alternate;
+}
+  
+  
+@keyframes wave-flag {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-5deg);
+    }
+}
+
+
+.hero .scroll-arrow {
+    position: absolute;
+    left: 50%;
+    top: 85vh;
+
+    width: 70px;
+    height: auto;
+
+    transform: translateX(-50%);
+
+    z-index: 3;
+
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+.hero .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 110%;
+    height: auto;
+
+    transform: translateX(-50%);
+
+    display: block;
+    z-index: 2;
+}
+
+.section1 {
+    background-color: #d1f3ff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+
+.section1-content {
+    width: 75vw;
+    text-align: left;
+
+    color: #1b3465;
+    font-size: 20px;
+}
+
+h1{
+    font-family: "Cooper";
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+h2{
+    font-family: "Cooper";
+    font-size: 30px;
+    margin-bottom: 8px;
+    padding-top: 10px;
+}
+
+
+.section1-content p{
+    margin-top: 0px;
+}
+
+.overglade-images {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    width: 100%;
+    height: 250px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.overglade-images img {
+    flex: 1;              /* divides width equally */
+    height: 100%;         /* fills row height */
+    object-fit: cover;    /* keeps it clean */
+}
+
+.section2 {
+    background-image: url("Assets/squiggle.png");
+    background-repeat: repeat-x;
+    background-size: 35vh; 
+
+    background-color: #d1f3ff;
+    margin: 0;
+    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.section2-content {
+    width: 75vw;
+    text-align: center;
+
+    color: #1b3465;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+
+.section2 p{
+    margin-top: 0px;
+}
+
+
+#sign-up-button {
+    width: 400px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+
+}
+
+#sign-up-button:hover{
+    transform: scale(1.04);
+}
+
+.section3 {
+    background-image: url("Assets/squiggle.png");
+    background-repeat: repeat-x;
+    background-size: 35vh; 
+
+    background-color: #d1f3ff;
+    margin: 0;
+    padding-top:60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 50px;
+
+}
+
+.section3-content {
+    width: 75vw;
+    text-align: left;
+    color: #1b3465;
+    font-size: 20px;
+}
+
+.section3-content h1 {
+    font-family: "Cooper";
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.faq {
+    border-top: 2px solid #9be4ff;
+    width: 100%;
+}
+
+.faq-item {
+    border-bottom: 2px solid #9be4ff;
+    padding: 15px 0;
+}
+
+.faq-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    font-family: "Cooper";
+    color: inherit;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.faq-title {
+    flex: 1;
+    text-align: left;
+}
+
+.faq-icon img {
+    padding-right: 5px;
+    transition: transform 0.2s ease;
+}
+
+.faq-item.open .faq-icon img {
+    transform: rotate(45deg);
+}
+
+.faq-item.open .faq-content {
+    padding-top: 10px;
+}
+
+.faq-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.15s ease;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.faq-content h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.section4 {
+    background-image: url("Assets/squiggle.png");
+    background-repeat: repeat-x;
+    background-size: 35vh; 
+
+    background-color: #d1f3ff;
+    margin: 0;
+    padding-top:60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.footer-content{
+    padding-top: 20px;
+    width: 45vw;
+    align-self: flex-start;
+    padding-left: 12.5vw;
+    padding-right: 0vw;
+    text-align: left;
+    color: #1b3465;
+    font-size: 18px;
+}
+
+.footer-content h3 {
+    font-family: "Cooper";
+    font-size: 20px;
+    margin-bottom: 13px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 70%;
+    color: #1b3465;
+    
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-column a{
+    display: block;
+    color: inherit;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.link-column a:hover{
+    text-decoration: underline;
+    text-decoration-style: line;
+}
+
+.link-column h3 {
+    font-family: "Cooper";
+    font-style: normal;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.footer-img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: underline;
+    text-decoration-style: line;
+
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
+}

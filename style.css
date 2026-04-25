@@ -92,22 +92,12 @@ body {
   
 .hc-flag img {
     height: 200px;
+    transition: transform 0.2s ease;
 }
 
 .hc-flag:hover img {
-    animation: wave-flag 0.5s linear infinite alternate;
+    transform: scale(1.04);
 }
-  
-  
-@keyframes wave-flag {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(-5deg);
-    }
-}
-
 
 .hero .scroll-arrow {
     position: absolute;

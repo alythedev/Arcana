@@ -496,7 +496,23 @@ h2{
     .hero .bottom{
         width: 140%;
     }
+
+    .section1 ul{
+        padding-left: 30px;
+    }
+
+    .overglade-images {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .overglade-images img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
 }
+
 
 
 a{

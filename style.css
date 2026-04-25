@@ -311,7 +311,6 @@ h2{
 }
 
 .faq-toggle {
-    user-select: none;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -336,6 +335,7 @@ h2{
 }
 
 .faq-icon img {
+    user-select: none;
     padding-right: 5px;
     transition: transform 0.2s ease;
 }

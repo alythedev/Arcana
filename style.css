@@ -206,7 +206,7 @@ h2{
 }
 
 .section2 {
-    background-image: url("Assets/squiggle.wbp");
+    background-image: url("Assets/squiggle.webp");
     background-repeat: repeat-x;
     background-size: 35vh; 
 
@@ -247,7 +247,7 @@ h2{
 }
 
 .section3 {
-    background-image: url("Assets/squiggle.wbp");
+    background-image: url("Assets/squiggle.webp");
     background-repeat: repeat-x;
     background-size: 35vh; 
 

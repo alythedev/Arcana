@@ -86,12 +86,12 @@ body {
 .hc-flag {
     z-index: 9999;
     position: absolute;
-    top: 50px;
-    right: 50px
+    top: 40px;
+    right: 40px
 }
   
 .hc-flag img {
-    width: 200px;
+    width: 180px;
     transition: transform 0.2s ease;
 }
 
@@ -104,7 +104,7 @@ body {
     left: 50%;
     top: 85vh;
 
-    width: 70px;
+    width: 80px;
     height: auto;
 
     transform: translateX(-50%);
@@ -136,6 +136,21 @@ body {
     display: block;
     z-index: 2;
 }
+
+.hero .two-liner {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+
+    width: 70%;
+    height: auto;
+
+    transform: translateX(-50%);
+
+    display: block;
+    z-index: 2;
+}
+
 
 .section1 {
     background-color: #d1f3ff;

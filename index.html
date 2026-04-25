@@ -17,13 +17,17 @@
             </a>
         </header>
 
-        <img src="Assets/arrow.webp" class="scroll-arrow" draggable="false">
+        <div class="scroll-parent">
+            <img src="Assets/arrow.webp" class="scroll-arrow" onclick="scrollDown()">
+        </div>
         <img src="Assets/2-liner.webp" class="two-liner" draggable="false">
         <img src="Assets/hero-bottom.webp" class="bottom" draggable="false">
 
     </div>
 
     <div class="section1">
+            <section id="scroll-here">
+
         <div class="section1-content">
             <h2>What is this?</h2>
             <p>
@@ -208,6 +212,22 @@
         
         <img src="Assets/footer.webp" class="footer-img">
 </div>
+
+<!-- hi! to whomever is reading this, the following javascript was ai-generated as I unfortunately do not understand javascript whatsoever :( -->
+
+<script>
+function scrollDown() {
+  const target = document.getElementById("scroll-here");
+
+  const elementTop = target.offsetTop;
+
+  window.scrollTo({
+    top: elementTop - window.innerHeight * 0.37, // adjust this
+    behavior: "smooth"
+  });
+}
+</script>
+
 
 <script>
 const items = document.querySelectorAll(".faq-item");

@@ -137,11 +137,26 @@ body {
     }
 }
 
-@media (max-width: 1050px) {
-    .hero .scroll-arrow {
-        display: none;
+@media (max-width: 1300px) {
+    .scroll-parent {
+        top: 75vh;
     }
 }
+
+/* 
+@media (max-width: 1350px) {
+    .scroll-parent {
+        top: 70vh;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .scroll-arrow {
+        display: none;
+    }
+} */
+
 
 
 .hero .bottom {
@@ -212,23 +227,112 @@ h2{
     margin-top: 0px;
 }
 
-.overglade-images {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.overglade-images{
+    padding-top: 15px;
+    padding-bottom: 40px;
     display: flex;
-    width: 100%;
-    height: 250px;
+    justify-self: center;
+    width: 104%;
+    height: 18vw;
     gap: 10px;
-    overflow: hidden;
 }
 
-.overglade-images img {
+.overglade-images img{
     flex: 1;
     height: 100%;
     object-fit: cover;
+
+    border: 6.5px solid #fffefa;
+    transition: transform 0.3s ease;
+
+
 }
 
-.section2 {
+.overglade-images img:nth-child(1){
+    transform: rotate(-1.5deg) translateY(-10px) translateX(25px);
+}
+
+.overglade-images img:nth-child(2){
+    height: 16.5vw;
+    transform: rotate(2.5deg) translateY(30px) translateX(-10px);
+    z-index: 1;
+}
+
+.overglade-images img:nth-child(3){
+    height: 17vw;
+    transform: rotate(7deg) translateY(20px) translateX(-40px);
+}
+
+
+
+.overglade-images img:nth-child(1):hover{
+    transform: rotate(-2deg) translateY(-10px) translateX(25px) scale(1.02);
+}
+
+.overglade-images img:nth-child(2):hover{
+    transform: rotate(5deg) translateY(30px) translateX(-10px) scale(1.04);
+}
+
+.overglade-images img:nth-child(3):hover{
+    transform: rotate(9deg) translateY(20px) translateX(-40px) scale(1.04);
+}
+
+
+@media (max-width: 1050px){
+    .overglade-images img{
+        pointer-events: none;
+    }
+
+    .overglade-images img:nth-child(1){
+        height: 25vw;
+
+        transform: rotate(-1.5deg) translateY(-10px) translateX(25px);
+    }
+
+    .overglade-images img:nth-child(2){
+        height: 25vw;
+
+        transform: rotate(2.5deg) translateY(30px) translateX(-10px);
+        z-index: 1;
+    }
+
+    .overglade-images img:nth-child(3){
+        display: none;
+    }
+
+    .overglade-images{
+        padding-bottom: 125px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .overglade-images{
+        padding-top: 0px;
+        padding-bottom: 25px;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .overglade-images img:nth-child(1){
+        flex: none;
+        height: 55vw;
+
+        transform: rotate(-1.5deg) translateY(0px) translateX(0px) scale(0.95);
+    }
+
+    .overglade-images img:nth-child(2){
+        flex: none;
+        height: 50vw;
+        transform: rotate(2deg) translateY(10px) translateX(0px) scale(0.95);
+        z-index: 1;
+    }
+
+}
+
+.section2{
     background-image: url("Assets/squiggle.webp");
     background-repeat: repeat-x;
     background-size: 35vh; 
@@ -370,7 +474,7 @@ h2{
 
     background-color: #d1f3ff;
     margin: 0;
-    padding-top:60px;
+    padding-top:50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -470,8 +574,24 @@ h2{
 }
 
 
+
+@media (max-width: 1450px) {
+
+    .footer-content{
+        width: 60vw;
+    }
+
+    .footer-links{
+        width: 40vw;
+    }
+
+}
+
 @media (max-width: 1050px) {
 
+    .scroll-arrow{
+        display: none;
+    }
     .footer-content{
         width: 75vw;
         padding-left: 0;
@@ -540,11 +660,6 @@ h2{
 
     .section1 ul{
         padding-left: 30px;
-    }
-
-    .overglade-images{
-        flex-direction: column;
-        height: auto;
     }
 
     .overglade-images img{

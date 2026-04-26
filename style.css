@@ -93,7 +93,7 @@ body {
 .hc-flag img {
     user-select: none;
     width: 180px;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s cubic-bezier(.34, 1.56, .64, 1);
 }
 
 .hc-flag:hover img {

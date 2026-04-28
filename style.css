@@ -502,6 +502,14 @@ h2{
     font-weight: 600;
 }
 
+.footer-content a{
+    text-decoration: none;
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+    text-decoration-style: line;
+}
 
 .footer-links {
     display: flex;
